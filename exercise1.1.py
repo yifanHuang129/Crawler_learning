@@ -2,7 +2,7 @@ import os.path
 import random
 from urllib import parse
 from urllib import request
-from crawler.tutorial.ua_info import ua_list
+from ua_info import ua_list
 
 
 def get_url(word):

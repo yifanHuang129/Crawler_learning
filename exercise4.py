@@ -1,11 +1,9 @@
 import os
-
 from ua_info import ua_list
 import random
 import time
 import requests
 from lxml.html import etree
-import csv
 import pandas as pd
 
 
