@@ -1,7 +1,7 @@
 import random
 from urllib import request
 from urllib import parse
-from crawler.tutorial.ua_info import ua_list
+from ua_info import ua_list
 import os.path
 
 query_string = {
