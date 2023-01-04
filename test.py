@@ -222,6 +222,7 @@ from ua_info import ua_list
 
 class OSVspider(object):
     def get_detail(self):
+        """This function is used to get all the detail information under h1"""
         soup = BeautifulSoup(html, 'html.parser')
         item = {}
         title = soup.find('h1', class_='title').text
@@ -254,7 +255,30 @@ class OSVspider(object):
                 value = re.compile('<a href.*?>(.*?)</a>', re.S).findall(value)[0]
             item[name] = value
             i += 1
-        pass
+        self.get_more_detail(soup, item)
+
+
+    def get_more_detail(self, soup, item):
+        """This function is used to get all the detail information under h2 and h3"""
+        affected_package = soup.find('h2', class_='title').text.strip()
+        value = soup.find('h2', class_='package-header').text.strip()
+        item[affected_package] = value
+
+        affected_version = soup.find('h3', class_='mdc-layout-grid__cell--span-3').text.strip()
+        raw_value_1 = soup.find('div', class_='mdc-layout-grid__cell--span-9')
+        value = []
+        sub_name_list = raw_value_1.find_all('dt')
+        sub_name1 = sub_name_list[0].text.strip()
+        sub_name2 = sub_name_list[1].text.strip()
+        sub_value_list = raw_value_1.find_all('dd')
+        sub_value1 = sub_value_list[0].text.strip()
+        sub_value2 = []
+        sub_value2_1 = sub_value_list[1].find('div', class_='mdc-layout-grid__cell--span-3').text.strip()
+        sub_value2_2 = sub_value_list[1].select('div ~ .mdc-layout-grid__cell--span-9, .version-value > a')[1]['href']
+        sub_value2.append(sub_value2_1)
+        sub_value2.append(sub_value2_2)
+        
+        print(1)
 
 
 if __name__ == '__main__':

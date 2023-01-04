@@ -82,8 +82,12 @@ html_doc = """
 """
 
 soup = BeautifulSoup(html_doc, 'html.parser')
+a = soup.find('p', class_='introduce').text
+print(a)
 print(soup.select('title'))
+b = soup.find('a', id='link1')
 print(soup.select('a[href]'))
+print(b['href'])
 print(soup.find('p', class_='vip').text)
 print(soup.select('#link1'))
 print(soup.select('html head title'))
