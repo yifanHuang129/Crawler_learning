@@ -1,0 +1,17 @@
+title,Source,Published,Modified,Details,References,Affected packages,Affected ranges,Affected versions,severity
+OSV-2017-16,https://github.com/google/oss-fuzz-vulns/blob/main/vulns/file/OSV-2017-16.yaml,2021-01-13T00:00:27.841127Z,2023-01-04T05:25:43.259245Z,"OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=750
+Crash type: Heap-buffer-overflow READ 1
+Crash state:
+file_strncmp
+magiccheck
+match",['https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=750'],"OSS-Fuzz
+/
+file","{'Type': 'GIT', 'Events': [('Introduced', 'https://github.com/file/file/commit/17f892b32cc92f7505f02d198142c1a57204582f'), ('Fixed', 'https://github.com/file/file/commit/3590556273652e71251fa79890eeb959ef02d8d8'), ('Fixed', 'https://github.com/file/file/commit/77a7041fae5b7c8cc3844bcd29b88a193b8e3752')]}",['FILE5_30'], MEDIUM
+OSV-2022-714,https://github.com/google/oss-fuzz-vulns/blob/main/vulns/libredwg/OSV-2022-714.yaml,2022-08-15T00:00:47.794062Z,2023-01-03T00:31:18.613990Z,"OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50194
+Crash type: Heap-buffer-overflow WRITE 16
+Crash state:
+dynapi_set_helper
+dwg_dynapi_header_set_value
+json_HEADER",['https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50194'],"OSS-Fuzz
+/
+libredwg","{'Type': 'GIT', 'Events': [('Introduced', 'https://github.com/LibreDWG/libredwg/commit/8984c223f14dc81180ca5da66f92e5932992bb5c')]}","['0.12.4.4635', '0.12.4.4637', '0.12.4.4641', '0.12.4.4643', '0.12.4.4647', '0.12.4.4652', '0.12.4.4654', '0.12.4.4658', '0.12.4.4660', '0.12.4.4668', '0.12.5.4669', '0.12.5.4678', '0.12.5.4685', '0.12.5.4690', '0.12.5.4693', '0.12.5.4695', '0.12.5.4697', '0.12.5.4700', '0.12.5.4709', '0.12.5.4712', '0.12.5.4715', '0.12.5.4722', '0.12.5.4724', '0.12.5.4726', '0.12.5.4731', '0.12.5.4735', '0.12.5.4739', '0.12.5.4741', '0.12.5.4743', '0.12.5.4748', '0.12.5.4750', '0.12.5.4756', '0.12.5.4760', '0.12.5.4763', '0.12.5.4765', '0.12.5.4772', '0.12.5.4776', '0.12.5.4780', '0.12.5.4784', '0.12.5.4787']", HIGH
