@@ -82,15 +82,17 @@ html_doc = """
 """
 
 soup = BeautifulSoup(html_doc, 'html.parser')
-a = soup.find('p', class_='introduce').text
+a = soup.select('p')
+# a = soup.find('p', class_='introduce').text
 print(a)
-print(soup.select('title'))
-b = soup.find('a', id='link1')
-print(soup.select('a[href]'))
-print(b['href'])
-print(soup.find('p', class_='vip').text)
-print(soup.select('#link1'))
-print(soup.select('html head title'))
-print(soup.select('p + a'))
-print(soup.select('p ~ a:nth-of-type(4)'))
-print(soup.select('p ~ .introduce > a:nth-of-type(2)'))
+# print(soup.select('title'))
+# b = soup.find('a', id='link1')
+# print(soup.select('a[href]'))
+# print(b['href'])
+# print(soup.find('p', class_='vip').text)
+# print(soup.select('#link1'))
+# print(soup.select('html head title'))
+# print(soup.select('p + a'))
+# print(soup.select('p ~ a:nth-of-type(4)'))
+print(soup.select('p ~ .introduce > a'))
+

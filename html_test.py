@@ -381,6 +381,146 @@ json_HEADER
     OSV-2022-714 - OSV
   </template>
 </turbo-stream>
+</div></body></html>""", """
+<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/png" href="/static/img/favicon-32x32.png" sizes="32x32"><link rel="icon" type="image/png" href="/static/img/favicon-16x16.png" sizes="16x16"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@400;700&family=Overpass:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"><meta charset="utf-8"><title id="title">OSV</title><script async src="https://www.googletagmanager.com/gtag/js?id=G-ZXG9G6HTBR"></script><script>window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ZXG9G6HTBR', { 'anonymize_ip': true });</script><script defer="defer" src="/static/vendors.af77356522aaacbd358e.js"></script><script defer="defer" src="/static/main.94c62785e419319c616f.js"></script><link href="/static/main.47829387a5541cab6c31.css" rel="stylesheet"></head><body><div class="wrapper "><header class="top-bar"><div class="logo"><a href="/"><img src="/static/img/logo.png" srcset="/static/img/logo.png, /static/img/logo@2x.png 2x"></a></div><input type="checkbox" id="hamburger-checkbox"> <label class="hamburger" for="hamburger-checkbox"><span></span> <span></span> <span></span></label><ul class="tabs"><li class="active page-link"><a href="/list">Vulnerability Database</a></li><li class=" page-link"><a href="/blog/">Blog</a></li><li class=" page-link"><a href="/about">About</a></li><li class="push"><a class="logo-img" href="https://github.com/google/osv.dev" target="_blank"><img class="logo-link" src="/static/img/github-mark-white.svg"></a></li></ul></header>
+<div class="vulnerability-page">
+<div class="mdc-layout-grid">
+  <div class="mdc-layout-grid__inner">
+    <div class="mdc-layout-grid__cell--span-12">
+      <h1 class="title">GHSA-cwh7-28vg-jmpr</h1>
+    </div>
+    <div class="mdc-layout-grid__cell--span-12">
+      <dl class="vulnerability-details">
+        <dt>Source</dt>
+        <dd><a href="https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/12/GHSA-cwh7-28vg-jmpr/GHSA-cwh7-28vg-jmpr.json">https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/12/GHSA-cwh7-28vg-jmpr/GHSA-cwh7-28vg-jmpr.json</a></dd>
+        
+          <dt>Aliases</dt>
+          <dd>
+            <ul class="aliases">
+            
+              <li>
+              CVE-2018-25059
+              
+              
+              </li>
+            
+            </ul>
+          </dd>
+        
+        <dt>Published</dt>
+        <dd>2022-12-30T12:30:25Z</dd>
+        <dt>Modified</dt>
+        <dd>2023-01-03T12:28:42Z</dd>
+        <dt>Details</dt>
+        <dd class="details">
+          <p>A vulnerability was found in pastebinit up to 0.2.2 and classified as problematic. Affected by this issue is the function pasteHandler of the file server.go. The manipulation of the argument <code>r.URL.Path</code> leads to path traversal. Upgrading to version 0.2.3 can address this issue. The name of the patch is 1af2facb6d95976c532b7f8f82747d454a092272. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-217040.</p>
+
+        </dd>
+        <dt>References</dt>
+        <dd>
+          <ul class="links">
+            
+              <li><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-25059">https://nvd.nist.gov/vuln/detail/CVE-2018-25059</a></li>
+            
+              <li><a href="https://github.com/jessfraz/pastebinit/pull/3">https://github.com/jessfraz/pastebinit/pull/3</a></li>
+            
+              <li><a href="https://github.com/jessfraz/pastebinit/commit/1af2facb6d95976c532b7f8f82747d454a092272">https://github.com/jessfraz/pastebinit/commit/1af2facb6d95976c532b7f8f82747d454a092272</a></li>
+            
+              <li><a href="https://github.com/jessfraz/pastebinit">https://github.com/jessfraz/pastebinit</a></li>
+            
+              <li><a href="https://github.com/jessfraz/pastebinit/releases/tag/v0.2.3">https://github.com/jessfraz/pastebinit/releases/tag/v0.2.3</a></li>
+            
+              <li><a href="https://vuldb.com/?ctiid.217040">https://vuldb.com/?ctiid.217040</a></li>
+            
+              <li><a href="https://vuldb.com/?id.217040">https://vuldb.com/?id.217040</a></li>
+            
+          </ul>
+        </dd>
+      </dl>
+    </div>
+  </div>
+</div>
+<div class="vulnerability-packages-container">
+  <h2 class="title">Affected packages</h2>
+  <spicy-sections
+      class="vulnerability-packages">
+    
+      <h2 class="package-header">
+        <span class="vuln-ecosystem spicy-sections-workaround">Go</span>
+        <span class="vuln-title-divider spicy-sections-workaround">/</span>
+        <span class="vuln-name spicy-sections-workaround">github.com/jessfraz/pastebinit</span>
+      </h2>
+      <div class="mdc-layout-grid">
+        <p class="subtitle">github.com/jessfraz/pastebinit</p>
+        <div class="vulnerability-package-subsection mdc-layout-grid__inner">
+          <h3 class="mdc-layout-grid__cell--span-3">
+            Affected ranges
+            <a href="https://ossf.github.io/osv-schema/#examples"></a>
+          </h3>
+          <div class="mdc-layout-grid__cell--span-9">
+            
+              <dl>
+                <dt>Type</dt>
+                <dd>SEMVER</dd>
+                <dt>Events</dt>
+                <dd>
+                  <div class="mdc-layout-grid__inner events">
+                    
+                      <div class="mdc-layout-grid__cell--span-3">
+                        Introduced
+                      </div>
+                      <div class="mdc-layout-grid__cell--span-9 version-value">
+                        
+                        
+
+                        0
+
+                        
+                      </div>
+                    
+                      <div class="mdc-layout-grid__cell--span-3">
+                        Fixed
+                      </div>
+                      <div class="mdc-layout-grid__cell--span-9 version-value">
+                        
+                        
+
+                        0.2.3
+
+                        
+                      </div>
+                    
+                  </div>
+                </dd>
+              </dl>
+            
+          </div>
+        </div>
+        <div class="vulnerability-package-subsection mdc-layout-grid__inner">
+          <h3 class="mdc-layout-grid__cell--span-3">
+            Affected versions
+            <a href="https://ossf.github.io/osv-schema/#affectedversions-field"></a>
+          </h3>
+          <div class="mdc-layout-grid__cell--span-9 version-value">
+            
+          </div>
+        </div>
+        
+        
+      </div>
+    
+  </spicy-sections>
+</div>
+</div>
+<turbo-stream action="update" target="title">
+  <template>
+    GHSA-cwh7-28vg-jmpr - OSV
+  </template>
+</turbo-stream>
 </div></body></html>"""]
 
 b = html_list[1]
